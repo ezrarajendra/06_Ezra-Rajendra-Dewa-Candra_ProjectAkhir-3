@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+}
+
+video{
+    display: block;
+}
+
+.section1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 100px;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.section1 h1{
+    margin-bottom: 20px;
+}
+
+.collections{
+    display:flex;
+    white-space: nowrap;
+    width:90%;
+    margin: auto;
+    margin-top: 50px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.collectionheadline{
+    text-align: center;
+    color: white;
+    margin: 40px 0 20px 0;
+    font-size: 1.6rem;
+}
+
+.collections::-webkit-scrollbar{
+    display: none;
+}
+
+.group {
+    display: flex;
+    animation: scroll 40s linear infinite;
+}
+
+.group img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+.card{
+    margin-right:3em;
+    border-radius: 12px;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 80px;
+    color: white;
+    padding: 0 20px;
+    font-size: 1.2rem;
+}
+
+.section3{
+    background-color: white;
+    margin: auto;
+    margin-top: 80px;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.ex1{
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin: 50px auto;
+    max-width: 800px;
+    justify-content: center;
+}
+
+.text{
+    flex: 1;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.imageex{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.newsletters{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 80px;
+    line-height: 1.8;
+}
+
+.newsletters input[type="email"]{
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 6px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.newsletters button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.newsletters button:hover{
+    background-color: #ffd700;
+    color: black;
+    transform: scale(1.05);
+}
